@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나한나 | Profile</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+  :root {
+    --ink: #232323;
+    --paper: #f6f3ec;
+    --panel: #fffdf8;
+    --line: #232323;
+    --amber: #1b7624ac;
+    --midnight: #23324a;
+    --muted: #6b6459;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 72px 28px 96px;
+  }
+
+  .intro {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    margin-bottom: 6px;
+  }
+
+  .intro span {
+    font-size: 0.95rem;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 0 44px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  h1 em {
+    font-style: normal;
+    color: var(--amber);
+  }
+
+  .meta-table {
+    border-top: 1.5px solid var(--line);
+    margin-bottom: 56px;
+  }
+
+  .meta-row {
+    display: flex;
+    padding: 14px 0;
+    border-bottom: 1px solid #ddd6c7;
+  }
+
+  .meta-row .k {
+    flex: 0 0 110px;
+    font-size: 0.9rem;
+    color: var(--muted);
+    padding-top: 2px;
+  }
+
+  .meta-row .v {
+    flex: 1;
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0 0 14px;
+    color: var(--midnight);
+  }
+
+  .block {
+    margin-bottom: 44px;
+  }
+
+  .hobby-panel {
+    background: var(--panel);
+    border: 1px solid #e3dcc9;
+    border-radius: 3px;
+    padding: 26px 28px;
+    position: relative;
+  }
+
+  .hobby-panel::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    bottom: 12px;
+    width: 3px;
+    background: var(--midnight);
+  }
+
+  .hobby-panel p {
+    margin: 0;
+    font-size: 1.02rem;
+  }
+
+  ul.hobby-tags {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  ul.hobby-tags li {
+    font-size: 0.85rem;
+    color: var(--midnight);
+    border: 1px solid var(--midnight);
+    padding: 5px 14px;
+    border-radius: 20px;
+  }
+
+  .goal-panel p {
+    margin: 0;
+    font-size: 1.02rem;
+  }
+
+  .goal-panel .note {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd6c7;
+    font-size: 0.85rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer a {
+    color: var(--amber);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 2.2rem; }
+    .page { padding: 48px 20px 64px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="intro"><span>Hello, I'm</span></div>
+  <h1>나<em>한나</em>입니다</h1>
+
+  <div class="meta-table">
+    <div class="meta-row">
+      <div class="k">학번</div>
+      <div class="v">22500219</div>
+    </div>
+    <div class="meta-row">
+      <div class="k">전공</div>
+      <div class="v">AI컴퓨터전자학부</div>
+    </div>
+    <div class="meta-row">
+      <div class="k">나이</div>
+      <div class="v">21세</div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h2>취미</h2>
+    <div class="hobby-panel">
+      <p>음악을 들으며 책 읽는 시간을 가장 좋아합니다.</p>
+      <ul class="hobby-tags">
+        <li>🎧 음악 감상</li>
+        <li>📖 독서</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="block">
+    <h2>이번 학기 목표</h2>
+    <div class="hobby-panel goal-panel">
+      <p>새로운 동아리를 찾아 가입해보는 것이 목표입니다.</p>
+      <div class="note">낯선 곳에서 새로운 사람들과 새로운 경험을 해보고 싶어요.</div>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 Hanna Na</span>
+    <a href="#">Contact</a>
+  </footer>
+
+</div>
+</body>
+</html>
