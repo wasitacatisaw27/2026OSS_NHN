@@ -8,7 +8,7 @@
 ### Vercel Deploy URL
     https://2026-oss-nhn.vercel.app/
 ### index.html URL
-    https://2026-oss-nhn.vercel.app/index1.html
+    버셀: https://2026-oss-nhn.vercel.app/index.html
 ### index2.html URL
     https://2026-oss-nhn.vercel.app/index2.html
 
@@ -16,17 +16,16 @@
 # Weekly Review
 
 ### Key Learning
-    1- 레포지토리 두 개를 로컬 하나에 연결해보기!
+    1- origin이 온라인 레포를 뜻하는 static인 줄 알았는데 아니었다.
 
-    2- 버셀 배포 오류 해결 : 로컬 이메일과 깃허브 이메일이 다르면 커밋 적용이 안된다
+    2- drwxr-xr-x 1 읽는 법, 소유자 권한, 그룹 권한, 기타 사용자 권한
 
     3- 여러 명령어 
+        mkdir-> 지정 경로에 폴더 생성
+        pwd-> 작업 폴더 전체 경로
+        code .-> vs코드 바로 열기
+        git log —oneline : 깃 로그 확인하기
 
-        3-1 git config --global --list 
-
-        3-2 git log —oneline 
-
-        3-3 ls, ls-tree
 
 ### Development Flow
 
@@ -34,10 +33,14 @@
 
 
 ### Code Modification: 
-    1: 배경, 폰트 색상 변경. 
-    2: 영어 문구 
+    1: 자기소개 내용 변경(영어-> 한글,)
+    2: 배경색, 글자색 변경
     3: footer에 이메일 주소 추가
 ### Problem & Solution: 
-    실습 중 발생한 문제와 해결 방법 1가지
+    문제: 버셀 배포 중, 로컬 이메일과 버셀 등록 이메일이 달라서 커밋이 제대로 적용되지 않는 문제가 발생했다. 
+
+
+    해결: 깃허브에 이메일 주소를 추가해서 해결.
 ### Reflection: 
-    새롭게 알게 된 점 또는 궁금한 점 1가지
+
+    개발자들은 왜 깃허브 툴을 애용할까?
